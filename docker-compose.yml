@@ -9,7 +9,7 @@ services:
     image: jboss/keycloak:10.0.2
     environment: 
       KEYCLOAK_USER: admin
-      KEYCLOAK_PASSWORD: kerri
+      KEYCLOAK_PASSWORD: admin
       DB_ADDR: mysql
       DB_USER: keycloak
       DB_PASSWORD: keycloak
@@ -26,7 +26,7 @@ services:
   mysql:
     image: mysql:8.0.20
     environment: 
-       MYSQL_ROOT_PASSWORD: kerri
+       MYSQL_ROOT_PASSWORD: 123456a@
        MYSQL_USER: keycloak 
        MYSQL_PASSWORD: keycloak
        MYSQL_DATABASE: keycloak
